@@ -66,12 +66,12 @@ const baseConfig = {
   VERSION,
   ALIVE:
     process.env.ALIVE ||
-    "_I am alive! (use .setalive help for custom alive msg)_",
+    "_I am alive! Wagwan!! You Chill!!!_",
   BLOCK_CHAT: process.env.BLOCK_CHAT || "",
   PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || "",
-  ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
+  ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
   MANGLISH_CHATBOT: convertToBool(process.env.MANGLISH_CHATBOT) || false,
-  ADMIN_ACCESS: convertToBool(process.env.ADMIN_ACCESS) || false,
+  ADMIN_ACCESS: convertToBool(process.env.ADMIN_ACCESS) || true,
   PLATFORM: isHeroku
     ? "Heroku"
     : isRailway
@@ -90,7 +90,7 @@ const baseConfig = {
   MULTI_HANDLERS: convertToBool(process.env.MULTI_HANDLERS) || false,
   DISABLE_START_MESSAGE:
     convertToBool(process.env.DISABLE_START_MESSAGE) || false,
-  NOLOG: process.env.NOLOG || false,
+  NOLOG: process.env.NOLOG || true,
   DISABLED_COMMANDS:
     (process.env.DISABLED_COMMANDS
       ? process.env.DISABLED_COMMANDS.split(",")
@@ -115,24 +115,24 @@ const baseConfig = {
     "78c84c62b32a88e86daf87dd509a657a",
   ],
   RG: process.env.RG || "919074309534-1632403322@g.us,120363116963909366@g.us",
-  BOT_INFO: process.env.BOT_INFO || "𝖱𝖺𝗀𝖺𝗇𝗈𝗋𝗄;𝖱𝗒𝗓𝖾𝗇;default",
+  BOT_INFO: process.env.BOT_INFO || "𝖱𝖺𝗀𝖺𝗇𝗈𝗋𝗄;Max;default",
   RBG_KEY: process.env.RBG_KEY || "",
   ALLOWED: process.env.ALLOWED || "91,94,2",
   NOT_ALLOWED: process.env.NOT_ALLOWED || "852",
   CHATBOT: process.env.CHATBOT || "off",
   HANDLERS: process.env.HANDLERS || ".,",
   STICKER_DATA: process.env.STICKER_DATA || "Raganork",
-  BOT_NAME: process.env.BOT_NAME || "Raganork",
+  BOT_NAME: process.env.BOT_NAME || "If she hadnt",
   AUDIO_DATA:
     process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private"
       ? "default"
       : process.env.AUDIO_DATA,
   TAKE_KEY: process.env.TAKE_KEY || "",
-  CMD_REACTION: convertToBool(process.env.CMD_REACTION) || false,
+  CMD_REACTION: convertToBool(process.env.CMD_REACTION) || true,
   MODE: process.env.MODE || "private",
   WARN: process.env.WARN || "4",
-  ANTILINK_WARN: process.env.ANTILINK_WARN || "",
-  ANTI_DELETE: convertToBool(process.env.ANTI_DELETE) || false,
+  ANTILINK_WARN: process.env.ANTILINK_WARN || "2",
+  ANTI_DELETE: convertToBool(process.env.ANTI_DELETE) || true,
   SUDO: process.env.SUDO || "",
   LANGUAGE: process.env.LANGUAGE || "english",
   ACR_A: "ff489a0160188cf5f0750eaf486eee74",
@@ -282,3 +282,4 @@ Object.defineProperty(config, "debug", {
 });
 
 module.exports = config;
+
